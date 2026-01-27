@@ -117,3 +117,38 @@ button:active {
     background-color: #f0faff;
     transform: translateY(-2px);
 }
+
+.actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .generate-btn {
+    background-color: var(--primary-btn);
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+  }
+  
+  .generate-btn:hover {
+    background-color: var(--primary-btn-hover);
+    /* Glowing blue shadow */
+    box-shadow: 0 6px 12px rgba(176, 224, 230, 0.4);
+    transform: translateY(-3px);
+  }
+  
+  .save-btn {
+    background-color: var(--accent-pink);
+    color: white;
+  }
+  
+  .save-btn:hover {
+    background-color: #ffc1cc;
+    transform: translateY(-2px);
+  }
+  
+  .speak-btn {
+    background-color: #dcdcdc;
