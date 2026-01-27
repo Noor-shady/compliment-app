@@ -40,3 +40,20 @@ function App() {
   const speak = (text) => {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.pitch = 1.2;
+    // Gentle speed
+    utterance.rate = 0.9;
+    window.speechSynthesis.speak(utterance);
+  };
+
+  // Save to Favorites Logic
+  const addToFavorites = () => {
+    if (!favorites.includes(compliment)) {
+      const newFavs = [...favorites, compliment];
+      setFavorites(newFavs);
+      localStorage.setItem('cozy_favorites', JSON.stringify(newFavs));
+      alert("Added to your feel-good collection! 💖");
+    }
+  };
+
+  return (
+    <div className="app-container">
