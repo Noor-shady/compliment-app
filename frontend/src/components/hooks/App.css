@@ -94,3 +94,13 @@ h1 {
     border: none;
     padding: 12px 25px;
     border-radius: 50px;
+    font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  font-family: inherit;
+}
+
+button:active {
+  transform: scale(0.95);
