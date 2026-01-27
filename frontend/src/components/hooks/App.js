@@ -37,6 +37,7 @@ function App() {
     }
   };
 
+  // Text-to-Speech Logic
   const speak = (text) => {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.pitch = 1.2;
@@ -57,10 +58,10 @@ function App() {
 
   return (
     <div className="app-container">
+      
+      <h1>✨ Daily Dose of Kindness ✨</h1>
 
-<h1>✨ Daily Dose of Kindness ✨</h1>
-
-<Mascot text={compliment} mood={mascotMood} />
+      <Mascot text={compliment} mood={mascotMood} />
 
       {/* Tone Selectors */}
       <div className="controls">
@@ -71,3 +72,33 @@ function App() {
           <button onClick={() => setTone("extra_wholesome")}>💖 Wholesome</button>
         </div>
       </div>
+
+      <div className="actions">
+        <button className="generate-btn" onClick={fetchCompliment}>
+          Receive Compliment
+        </button>
+        <button className="save-btn" onClick={addToFavorites}>
+          💾 Save this
+        </button>
+        <button className="speak-btn" onClick={() => speak(compliment)}>
+          🔊 Listen
+        </button>
+      </div>
+
+      {/* Favorites List */}
+      {favorites.length > 0 && (
+        <div className="favorites-section">
+          <h3>Your Collection</h3>
+          <ul>
+            {favorites.map((fav, index) => (
+              <li key={index}>"{fav}"</li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+    </div>
+  );
+}
+
+export default App;
