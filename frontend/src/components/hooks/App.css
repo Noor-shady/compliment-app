@@ -8,3 +8,9 @@
     --primary-btn: #b0e0e6;
     --primary-btn-hover: #add8e6;
     --accent-pink: #ffb6c1;
+    /* Rounded friendly font */
+    --font-main: 'Quicksand', sans-serif;
+}
+
+body {
+  margin: 0;
