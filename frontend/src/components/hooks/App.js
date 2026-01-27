@@ -57,3 +57,5 @@ function App() {
 
   return (
     <div className="app-container">
+
+<h1>✨ Daily Dose of Kindness ✨</h1>
