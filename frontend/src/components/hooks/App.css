@@ -61,3 +61,31 @@ h1 {
   position: relative;
   transition: all 0.3s ease;
 }
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    /* Position above the bubble */
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 15px 15px;
+    border-style: solid;
+    border-color: transparent transparent var(--accent-pink);
+  }
+  
+  /* Controls & Tone Buttons */
+  .controls {
+    margin-bottom: 25px;
+    /* Semi-transparent glass look */
+    background: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
