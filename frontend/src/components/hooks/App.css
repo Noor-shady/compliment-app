@@ -89,3 +89,8 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  button {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
