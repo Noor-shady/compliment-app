@@ -1,1 +1,6 @@
-
+:root {
+    /* Lavender Blush background */
+    --bg-color: #fff0f5;
+    /* Slate Blue (gentle text) */
+    --text-color: #6a5acd;
+    --card-bg: #ffffff;
