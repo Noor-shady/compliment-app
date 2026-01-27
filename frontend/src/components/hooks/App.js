@@ -36,3 +36,7 @@ function App() {
       setMascotMood("neutral");
     }
   };
+
+  const speak = (text) => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.pitch = 1.2;
