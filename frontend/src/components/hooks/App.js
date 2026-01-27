@@ -59,3 +59,15 @@ function App() {
     <div className="app-container">
 
 <h1>✨ Daily Dose of Kindness ✨</h1>
+
+<Mascot text={compliment} mood={mascotMood} />
+
+      {/* Tone Selectors */}
+      <div className="controls">
+        <p>Current Vibe: <strong>{tone.replace('_', ' ')}</strong></p>
+        <div className="button-group">
+          <button onClick={() => setTone("soft")}>☁️ Soft</button>
+          <button onClick={() => setTone("cheerful")}>☀️ Cheerful</button>
+          <button onClick={() => setTone("extra_wholesome")}>💖 Wholesome</button>
+        </div>
+      </div>
