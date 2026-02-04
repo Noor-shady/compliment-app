@@ -4,9 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite --open",
-  "build": "vite build",
-  "preview": "vite preview"
+  "dev": "BROWSER='safari' vite --open"
 },
   "dependencies": {
     "react": "^18.2.0",
