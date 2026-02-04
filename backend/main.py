@@ -34,3 +34,8 @@ if __name__ == "__main__":
     from threading import Timer
 
     def open_browser():
+        webbrowser.open("http://localhost:5173")
+
+    Timer(1.5, open_browser).start()
+    
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
