@@ -28,3 +28,9 @@ def get_compliment(tone: str):
         "text": random.choice(category),
         "tone": tone
     }
+if __name__ == "__main__":
+    import uvicorn
+    import webbrowser
+    from threading import Timer
+
+    def open_browser():
