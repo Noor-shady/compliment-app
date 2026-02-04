@@ -16,3 +16,17 @@ const Mascot = ({ text, mood }) => {
       >
         {getEmoji()}
       </motion.div>
+      {text && (
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="speech-bubble"
+        >
+          {text}
+        </motion.div>
+      )}
+    </div>
+  );
+};
+
+export default Mascot;
